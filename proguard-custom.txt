@@ -65,8 +65,8 @@
 -keep class org.apache.cordova.ResumeCallback { org.apache.cordova.PluginManager pluginManager; }
 -keep class org.apache.cordova.engine.SystemWebViewEngine { org.apache.cordova.PluginManager pluginManager; }
 
--keep class com.microsoft.cordova { }
--keep class com.microsoft.azure.mobile.cordova { }
+-keep class com.microsoft.cordova.** { *; }
+-keep class com.microsoft.azure.mobile.cordova.** { *; }
 
 #-keep class com.google.gson.internal.UnsafeAllocator { ** theUnsafe; }
 #-keep class me.leolin.shortcutbadger.ShortcutBadger { ** extraNotification; }
