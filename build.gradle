@@ -1,10 +1,12 @@
 android {
   buildTypes {
     debug {
+      shrinkResources true
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom.txt'
     }
     release {
+      shrinkResources true
       minifyEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom.txt'
     }
